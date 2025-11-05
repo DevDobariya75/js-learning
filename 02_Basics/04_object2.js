@@ -32,13 +32,38 @@ const obj2 = {3: "a" , 4: "b"}
 const obj3 = {...obj1, ...obj2}
 //console.log(obj3);
 
-console.log(tinderUSer);
+// console.log(tinderUSer);
 
-console.log(Object.keys(tinderUSer));
-console.log(Object.values(tinderUSer));
-console.log(Object.entries(tinderUSer));
-console.log(tinderUSer.hasOwnProperty('isLoggedIn'));
+// console.log(Object.keys(tinderUSer));
+// console.log(Object.values(tinderUSer));
+// console.log(Object.entries(tinderUSer));
+// console.log(tinderUSer.hasOwnProperty('isLoggedIn'));
 
+
+const cource = {
+    coursename: "javascript",
+    price: "99",
+    courceInstructor: "Hitesh"
+}
+
+//cource.courceInstructor
+
+//extrct
+const {courceInstructor: CI} = cource
+console.log(CI);
+
+//distructuring 
+// const navbar = ({company}) =>{
+
+// }
+
+// navbar(complany = "hitesh")
+
+// {
+//     "name": "dev",
+//     "courcename": "js",
+//     "price": "free"
+// }
 
 
 
