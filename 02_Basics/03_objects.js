@@ -1,39 +1,38 @@
-// sigleton --> made with constructor Object.create
+// singleton
+// Object.create
+
+// object literals
 
 const mySym = Symbol("key1")
 
-//key: value
+
 const JsUser = {
-    name: "Dev",
+    name: "Hitesh",
+    "full name": "Hitesh Choudhary",
+    [mySym]: "mykey1",
     age: 18,
-    location: "surat",
-    email: "dev@google.com",
+    location: "Jaipur",
+    email: "hitesh@google.com",
     isLoggedIn: false,
-    [mySym]: "mykey1"
+    lastLoginDays: ["Monday", "Saturday"]
 }
 
-// how to access Object 
-console.log(JsUser.email);      //1
-console.log(JsUser["email"]);   //2
-console.log(JsUser[mySym]);
+// console.log(JsUser.email)
+// console.log(JsUser["email"])
+// console.log(JsUser["full name"])
+// console.log(JsUser[mySym])
 
-//change value
-
-JsUser.email = "dev@hmail.com"
-console.log(JsUser.email);
-
-//will not able to change 
-//Object.freeze(JsUser)
+JsUser.email = "hitesh@chatgpt.com"
+// Object.freeze(JsUser)
+JsUser.email = "hitesh@microsoft.com"
+// console.log(JsUser);
 
 JsUser.greeting = function(){
-    console.log("hello js user !!");
+    console.log("Hello JS user");
 }
-
-JsUser.greeting2 = function(){
-    console.log(`hello js , ${this.name}`);
+JsUser.greetingTwo = function(){
+    console.log(`Hello JS user, ${this.name}`);
 }
 
 console.log(JsUser.greeting());
-console.log(JsUser.greeting2());
-
-
+console.log(JsUser.greetingTwo());

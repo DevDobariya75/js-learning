@@ -1,46 +1,35 @@
-// basic string thing 
+const name = "hitesh"
+const repoCount = 50
 
-const name = "dev"
-const repocount = 50
+// console.log(name + repoCount + " Value");
 
-//console.log(name + repocount + "Value");
+console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
-//use backtick insted
+const gameName = new String('hitesh-hc-com')
 
-console.log(`Hello my name is ${name} and my repo count is ${repocount}`);
+// console.log(gameName[0]);
+// console.log(gameName.__proto__);
 
-const gamename = new String("iam-here")
 
-console.log(gamename[0]);
+// console.log(gameName.length);
+// console.log(gameName.toUpperCase());
+console.log(gameName.charAt(2));
+console.log(gameName.indexOf('t'));
 
-//lots of method of sting -- some of here
-console.log(gamename.__proto__);
-
-console.log(gamename.length);
-
-console.log(gamename.toUpperCase());
-
-console.log(gamename.charAt('2'));
-
-console.log(gamename.indexOf('h'));
- 
-const newString = gamename.substring(0 , 4)
+const newString = gameName.substring(0, 4)
 console.log(newString);
 
-const anthorStirng = gamename.slice(-8 , 4)
-console.log(anthorStirng);
+const anotherString = gameName.slice(-8, 4)
+console.log(anotherString);
 
+const newStringOne = "   hitesh    "
+console.log(newStringOne);
+console.log(newStringOne.trim());
 
-const newString1 = "   dev"
-console.log(newString1);
-console.log(newString1.trim());
+const url = "https://hitesh.com/hitesh%20choudhary"
 
-const url = "https://dev.com/dev%20dobariya"
+console.log(url.replace('%20', '-'))
 
-console.log(url.replace('%20' , '-'))
-console.log(url);
+console.log(url.includes('sundar'))
 
-console.log(url.includes('dev'));
-
-// split
-
+console.log(gameName.split('-'));

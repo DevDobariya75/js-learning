@@ -1,5 +1,3 @@
-// using switch - case stament 
-
 // switch (key) {
 //     case value:
         
@@ -9,23 +7,23 @@
 //         break;
 // }
 
-
-const month = 3
+const month = "march"
 
 switch (month) {
-    case 1:
-        console.log("januray");
+    case "jan":
+        console.log("January");
         break;
-    case 2:
-        console.log("Feb");
+    case "feb":
+        console.log("feb");
         break;
-    case 3:
+    case "march":
         console.log("march");
         break;
-    case 4 :
+    case "april":
         console.log("april");
         break;
+
     default:
-        console.log("may");      
+        console.log("default case match");
         break;
 }

@@ -1,34 +1,52 @@
-// if - statment
+// if
+const isUserloggedIn = true
+const temperature = 41
 
-if (true){
-    console.log("hello");
+// if ( temperature === 40 ){
+//     console.log("less than 50");
+// } else {
+//     console.log("temperature is greater than 50");
+// }
+
+// console.log("Execute");
+// <, >, <=, >=, ==, !=, ===, !==
+
+// const score = 200
+
+// if (score > 100) {
+//     let power = "fly"
+//     console.log(`User power: ${power}`);
+// }
+
+// console.log(`User power: ${power}`);
+
+
+// const balance = 1000
+
+// if (balance > 500) console.log("test"),console.log("test2");
+
+// if (balance < 500) {
+//     console.log("less than 500");
+// } else if (balance < 750) {
+//     console.log("less than 750");
+    
+// } else if (balance < 900) {
+//     console.log("less than 750");
+    
+// } else {
+//     console.log("less than 1200");
+
+// }
+
+const userLoggedIn = true
+const debitCard = true
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
+
+if (userLoggedIn && debitCard && 2==3) {
+    console.log("Allow to buy course");
 }
 
-if (2 == 2){
-    console.log("2 is here ");
+if (loggedInFromGoogle || loggedInFromEmail) {
+    console.log("User logged in");
 }
-
-const isUserLoggedIn = true
-
-if (isUserLoggedIn) {
-    console.log("welcome");
-}
-// all are the use of if as you know 
-
-// if-else 
-
-const temp = 41 
-
-if(temp === 41){
-    console.log("temp is greter than 41");
-}else{
-    console.log("temp is less than 41");
-}
-
-// shortend
-
-const bal = 1000
-
-if (bal > 500) console.log("test");
-
-// also can perform nesting 

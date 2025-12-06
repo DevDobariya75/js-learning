@@ -1,68 +1,70 @@
-// console.log("D");
-// console.log("E");
-// console.log("v");
 
 function sayMyName(){
-    console.log("D");
+    console.log("H");
+    console.log("I");
+    console.log("T");
     console.log("E");
-    console.log("v");
+    console.log("S");
+    console.log("H");
 }
 
 // sayMyName()
-                    //parameters
-function addTwoNumbers(num1 , num2){
-    console.log(num1 + num2);
+
+// function addTwoNumbers(number1, number2){
+
+//     console.log(number1 + number2);
+// }
+
+function addTwoNumbers(number1, number2){
+
+    // let result = number1 + number2
+    // return result
+    return number1 + number2
 }
-            //arguments
-// addTwoNumbers(5 , 5)
 
-function addTwoNumbers2(num1 , num2){
-    let res = num1 + num2
-    return res
-}
+const result = addTwoNumbers(3, 5)
 
-const res = addTwoNumbers2(2 , 5)
-// console.log("result : " , res);
+// console.log("Result: ", result);
 
-function loginUserMessage(username){
-    if(username == undefined){
-        console.log("Enter valid username");
+
+function loginUserMessage(username = "sam"){
+    if(!username){
+        console.log("PLease enter a username");
         return
     }
-    return `${username} just logged In`
+    return `${username} just logged in`
 }
 
-// console.log(loginUserMessage("Dev"));
+// console.log(loginUserMessage("hitesh"))
+// console.log(loginUserMessage("hitesh"))
 
 
-//rest operator
-function calculateCartPrice(val1 , val2 , ...num1){
+function calculateCartPrice(val1, val2, ...num1){
     return num1
 }
 
-// console.log(calculateCartPrice(200 , 400 , 500 ,2000));
+// console.log(calculateCartPrice(200, 400, 500, 2000))
 
 const user = {
-    username: "dev",
+    username: "hitesh",
     prices: 199
 }
 
-function handleObject(anyObject){
-    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
-    
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
 
-// console.log(user);
+// handleObject(user)
+handleObject({
+    username: "sam",
+    price: 399
+})
 
-// handleObject({
-//     username: "devvv",
-//     price: 1000
-// })
+const myNewArray = [200, 400, 100, 600]
 
-const myNewArray = [200 , 400 , 100 , 600]
-
-function returnSecondvalue(getArray){
+function returnSecondValue(getArray){
     return getArray[1]
 }
 
-console.log(returnSecondvalue(myNewArray));
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 400, 500, 1000]));

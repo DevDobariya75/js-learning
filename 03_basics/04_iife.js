@@ -1,13 +1,12 @@
-// Immediately Invoked Fuctions Expressions(IIFE)
+// Immediately Invoked Function Expressions (IIFE)
+
 
 (function chai(){
-    // named iife
-    console.log(`DB CONNTECTD`);    
+    // named IIFE
+    console.log(`DB CONNECTED`);
 })();
 
-// chai()
-
-( (name) =>  {
-    // unnamed iife
+( (name) => {
     console.log(`DB CONNECTED TWO ${name}`);
-})("dev");
+} )('hitesh')
+

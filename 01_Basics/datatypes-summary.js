@@ -1,30 +1,37 @@
-// primitive datatypes
-// 7 types : String  , Number , Boolean , null , undefined , Symbol , BigInt
+//  Primitive
+
+//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
 const score = 100
 const scoreValue = 100.3
+
+const isLoggedIn = false
+const outsideTemp = null
+let userEmail;
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
 console.log(id === anotherId);
 
-const bigNumber = 78945612365454n
+// const bigNumber = 3456543576654356754n
 
-// Dynamically typed language
+
 
 // Reference (Non primitive)
-// Array , Objects , Functinos
 
-const heros = ["shktiman" , "doga" , "iornman"]
+// Array, Objects, Functions
 
-let muOgj = {
-    name: "dev",
-    age: 20
+const heros = ["shaktiman", "naagraj", "doga"];
+let myObj = {
+    name: "hitesh",
+    age: 22,
 }
 
 const myFunction = function(){
-   console.log("hello word");    
+    console.log("Hello world");
 }
 
-// check data type of all using typeof
+console.log(typeof anotherId);
+
+// https://262.ecma-international.org/5.1/#sec-11.4.3
