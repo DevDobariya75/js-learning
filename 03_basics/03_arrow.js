@@ -32,6 +32,7 @@ const chai =  () => {
     console.log(this);
 }
 
+// console.log(chai);
 
 // chai()
 
@@ -46,7 +47,7 @@ const chai =  () => {
 const addTwo = (num1, num2) => ({username: "hitesh"})
 
 
-console.log(addTwo(3, 4))
+// console.log(addTwo(3, 4))
 
 
 // const myArray = [2, 5, 3, 7, 8]
