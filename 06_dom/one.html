@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom learning !!</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <div class="bg-black">
+        <h1 id="title" class="heading">DOM learning on chai aur code <span style="display: none;">test case</span></h1>
+        <p>hello this is a paragraph.</p>
+    </div>
+
+    <ul>
+        <li class="list-item">one</li>
+        <li class="list-item">two </li>   <!-- when we use document.getElementsByClassName it returns html collection so we can not apply forEach directly on it. to use forEach we need to convert it into array using Array.from() or spread operator. -->
+        <li class="list-item">three</li>
+        <li class="list-item">four</li>
+    </ul>
+
+    <!-- method 1 : document.getElementById-->
+    <!-- document.getElementbyId('title').getAttribute('id')-->
+    <!-- different style and attributes and methods in browser console -->
+
+    <!-- top get text inside and element  -->
+    <!-- innerHTML , textContent , innerText -->
+
+    <!-- differnece bw innerText and textContent :
+    <ul>
+        <li>innerText considers styling and will not return hidden text, while textContent returns all text regardless of styling.</li>
+        <li>innerText triggers reflow to ensure up-to-date rendering, whereas textContent does not.</li>
+        <li>innerText is generally slower due to its rendering considerations, while textContent is faster.</li>
+    </ul> -->
+
+    <!-- innerHTML use for getting the html content inside an element. -->
+
+    <!-- querySelector and querySelectorAll -->
+    <!-- querySelector : returns the first matching element for a specified CSS selector.
+    querySelectorAll : returns all matching elements for a specified CSS selector as a NodeList.  -->
+    
+</body>
+</html>
